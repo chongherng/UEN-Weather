@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.UEN-Format-Validator,.Weather-Checker {
+    margin-top: 90px;
+    display: grid;
+    place-items: center;
+}
+

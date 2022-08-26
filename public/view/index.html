@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../script/script.js" defer></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="UEN-Format-Validator">
+        <div>
+            <h2>UEN Format Validator</h2>
+        </div>
+        <div>
+            <form action="/validateFormat" method="GET" id="UENForm">
+                <label for="UEN">UEN: </label>
+                <input type="text" id="UEN" name="UEN">
+                <input type="button" value="Check" id="UENBtn">
+            </form>
+        </div>
+        <p id="UENResponse"></p>
+    </div>
+    <div class="Weather-Checker">
+        <div>
+            <h2>Weather Checker</h2>
+        </div>
+        <div>
+            <form action="/weather" method="GET" id="weatherForm">
+                <label for="location">Location: </label>
+                <select name = "location" id="location"></select>
+                <input type="button" value="Check" id="weatherBtn">
+            </form>
+        </div>
+        <p id="weatherResponse"></p>
+    </div>
+</body>
+</html>
