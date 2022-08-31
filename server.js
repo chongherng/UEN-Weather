@@ -25,7 +25,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use("/", home);
 
-app.listen(3000, () => console.log("Server listening on port 5000"));
+app.listen(3000, () => console.log("Server listening on port 3000"));
 
 cron.schedule("0,30 * * * *", async () => {
   try {
