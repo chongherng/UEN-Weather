@@ -1,7 +1,7 @@
 const validateFormat = async (UEN) => {
     const typeARegex = /^\d{8}[A-Z]$/;
-    const typeBRegex = /^\d{9}[A-Z]$/;
-    const typeCRegex = /^[TS]\d{2}[A-Z][A-Z0-9]\d{4}[A-Z]$/;
+    const typeBRegex = /^(18|19|20)\d{7}[A-Z]$/;
+    const typeCRegex = /^[TS]\d{2}(LP|LL|FC|PF|RF|MQ|MM|NB|CC|CS|MB|FM|GS|DP|CP|NR|CM|CD|MD|HS|VH|CH|MH|CL|XL|CX|HC|RP|TU|TC|FB|FN|PA|PB|SS|MC|SM|GA|GB)\d{4}[A-Z]$/;
     if(typeARegex.test(UEN)){
       return "UEN is of type A";
     }
